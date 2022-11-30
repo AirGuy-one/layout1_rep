@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Page Title</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
     <script src="script.js"></script>
@@ -15,11 +16,15 @@
         <div class="js-progress" style="background-color: grey;">
             <div class="js-progress-slider" style="background-color: yellow;">Прогресс</div>
         </div>
-        <button class="js-play-button">play</button>
+        <button class="js-play-button">
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
         <button class="js-pause-button">pause</button>
         <button class="js-fullscreen-button">full</button>
         <p class="js-duration"></p>
     </div>
+
+    
 
     
 
