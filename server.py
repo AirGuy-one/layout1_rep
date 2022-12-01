@@ -1,6 +1,5 @@
 from livereload import Server
 
-
 def rebuild():
     ... # do things
     print("Site rebuilt")
