@@ -1,0 +1,33 @@
+.some-div {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    flex-grow: 1;
+
+    background-color: aqua;
+    height: 600px;
+}
+
+p {
+    font-size: 56px;
+}
+
+.some {
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.some#one {
+    align-self: flex-end;
+    flex-grow: 2;
+}
+
+.some#two {
+    align-self: center;
+    flex-grow: 3;
+}
+
+.some#three {
+    flex-grow: 4;
+}
