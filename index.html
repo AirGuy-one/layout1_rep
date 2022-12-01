@@ -3,28 +3,47 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Page Title</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
     <script src="script.js"></script>
+    <style>
+        .buttons {
+            background-color: black;
+            height: 24px;
+        }
+
+        .fa {
+            color: white;
+        }
+
+        .js-play-button, .js-pause-button {
+            border-style: none; cursor: pointer; background-color: transparent;
+        }
+
+        .js-video-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        #player {
+            width: 800px; height: 450px;
+        }
+
+    </style>
 </head>
 <body>
 
     <h1>This is main page</h1>
 
-    <div id="player" style="width: 800px; height: 600px;">
-        <div class="js-video-container" style="width: 100%; height: 100%"></div>
-        <!-- <div class="js-progress" style="background-color: grey;">
-            <div class="js-progress-slider" style="background-color: rgb(70, 70, 70);">Прогресс</div>
-        </div> -->
-
-        <div class="buttons" style="background-color: black;">
-            <button class="js-play-button" style="border-style: none; cursor: pointer; background-color: transparent;">
-                <i class="fa fa-play" aria-hidden="true" style="color: white;"></i>
+    <div id="player">
+        <div class="js-video-container"></div>
+        <div class="buttons">
+            <button class="js-play-button">
+                <i class="fa fa-play" aria-hidden="true"></i>
             </button>
-            <button class="js-pause-button" style="border-style: none; cursor: pointer; background-color: transparent;">
-                <i class="fa fa-pause" aria-hidden="true" style="color: white;"></i>
+            <button class="js-pause-button">
+                <i class="fa fa-pause" aria-hidden="true"></i>
             </button>
             <!-- <button class="js-fullscreen-button">full screen</button> -->
             <p class="js-duration"></p>
