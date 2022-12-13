@@ -10,84 +10,67 @@
     <script src="script.js"></script>
     <style>
 
+        .player-wrapper {
+            width: 800px;
+            height: 600px;
+            box-shadow: 0 0 10px 5px rgb(111, 111, 111);
+            display: flex;
+            flex-direction: column;
+        }
+
         .video-container {
-            flex-grow: 30;
+            flex-grow: 1;
         }
 
         .buttons-wrapper {
             background-color: black;
-            flex-grow: 1;
-            height: 3%;
             display: flex;
             flex-direction: row;
-        }
-
-        .symbol-wrapper {
-            color: white;
+            align-items: center;
         }
 
         .button-addition {
             border-style: none;
             cursor: pointer;
             background-color: transparent;
-        }
-
-        #player {
-            width: 800px; height: 600px;
-            box-shadow: 0 0 10px 5px rgb(111, 111, 111);
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .mute-volume-class {
-            margin-left: 3px;
-        }
-
-        .play-pause-fullscreen-class {
-            margin-left: 5px;
-            width: 40px;
+            font-size: 20px;
+            color: #fff;
+            width: 35px;
+            height: 35px;
         }
 
         .empty-div {
             flex-grow: 1;
         }
 
-        .full-button-wrapper {
-            margin-right: 5px;
-        }
-
     </style>
 </head>
 <body>
 
-    <div id="player">
+    <div id="player" class="player-wrapper">
         <div class="js-video-container video-container"></div>
         <div class="buttons-wrapper">
-            <div class="">
-                <button class="button js-play-button button-addition play-pause-fullscreen-class" id="play-button-id">
-                    <i class="fa fa-play fa-2x symbol-wrapper" aria-hidden="true"></i>
-                </button>
+            <button class="js-play-button button-addition" id="play-button-id">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </button>
 
-                <button class="button js-pause-button button-addition play-pause-fullscreen-class" id="pause-button-id">
-                    <i class="fa fa-pause fa-2x symbol-wrapper" aria-hidden="true"></i>
-                </button>
+            <button class="js-pause-button button-addition" id="pause-button-id">
+                <i class="fa fa-pause" aria-hidden="true"></i>
+            </button>
 
-                <button class="button js-mute-button button-addition mute-volume-class" id="mute-button-id" hidden>
-                    <i class="fa fa-volume-up fa-2x symbol-wrapper" aria-hidden="true"></i>
-                </button>
+            <button class="js-mute-button button-addition" id="mute-button-id" hidden>
+                <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </button>
 
-                <button class="button js-volume-button button-addition mute-volume-class" id="volume-button-id">
-                    <i class="fa fa-volume-off fa-2x symbol-wrapper" aria-hidden="true"></i>
-                </button>
-            </div>
-            <div class="empty-div">
-            </div>
-            <div class="full-button-wrapper">
-                <button class="js-fullscreen-button button-addition">
-                    <i class="fa fa-expand fa-2x symbol-wrapper" aria-hidden="true"></i>
-                </button>
-            </div>
+            <button class="js-volume-button button-addition" id="volume-button-id">
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
+            </button>
+
+            <div class="empty-div"></div>
+            
+            <button class="js-fullscreen-button button-addition">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
     
