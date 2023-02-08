@@ -54,7 +54,6 @@
             flex-grow: 1;
             margin: 0 3px;
             cursor: pointer;
-            background-color: lime;
         }
 
         .video-duration {
@@ -93,11 +92,15 @@
             background-color: black;
             display: flex;
             justify-content: start;
-            background-color: aqua;
         }
 
         .progress:hover .dot {
-            background-color: blue;
+            height: 8px;
+            width: 8px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            border: solid white 3px;
+            margin-left: -4px;
         }
 
         .slider {
@@ -113,12 +116,7 @@
 
         .dot {
             height: 8px;
-            width: 8px;
-            background-color: #ff0000;
-            border-radius: 50%;
-            border: solid white 3px;
-            display: inline-block;
-            margin-left: -4px;
+            border: solid black 3px;
         }
 
     </style>
