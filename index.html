@@ -10,35 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
-    <style>
-    </style>
 </head>
 <body>
 
     <div id="player" class="player-wrapper">
         <div class="js-video-container video-container"></div>
         <div class="bottom-controls">
-            <div class="left-buttons">
-                <div class="play-button">
-                    <button class="js-play-button button-addition">
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                    </button>
-                    <button class="js-pause-button button-addition">
-                        <i class="fa fa-pause" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <div class="volume-button">
-                    <button class="js-mute-button button-addition" hidden>
-                        <i class="fa fa-volume-up" aria-hidden="true"></i>
-                    </button>
-                    <button class="js-volume-button button-addition">
-                        <i class="fa fa-volume-off" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
+            <button class="js-play-button button-addition">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </button>
+            <button class="js-pause-button button-addition">
+                <i class="fa fa-pause" aria-hidden="true"></i>
+            </button>
+            <button class="js-mute-button button-addition" hidden>
+                <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </button>
+            <button class="js-volume-button button-addition">
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
+            </button>
             <div class="viewing-panel">
                 <div class="js-current-time timer"></div>
                 <div class="js-progress viewing-progressbar">
@@ -47,13 +39,9 @@
                 </div>
                 <div class="js-duration timer"></div>
             </div>
-            <div class="right-buttons">
-                <div class="fullscreen-button">
-                    <button class="js-fullscreen-button button-addition expand-button">
-                        <i class="fa fa-expand" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
+            <button class="js-fullscreen-button button-addition expand-button">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+            </button>
 
         </div>
     </div>
