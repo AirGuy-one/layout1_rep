@@ -87,6 +87,7 @@
     background-color: black;
     display: flex;
     justify-content: start;
+    border-radius: 2px;
 }
 
 .progress:hover .dot {
@@ -103,9 +104,6 @@
     display: inline;
     background-color: red;
     height: 4px;
-}
-
-.progress-slider {
     border-radius: 2px;
 }
 
