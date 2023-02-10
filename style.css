@@ -31,18 +31,23 @@
     height: 35px;
 }
 
-.viewing-time {
-    margin: auto 0;
-}
-
 .viewing-progressbar {
     flex-grow: 1;
-    margin: 0 3px;
     cursor: pointer;
+    margin: 11px 5px;
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    border-radius: 2px;
 }
 
-.video-duration {
-    margin: auto 0;
+.viewing-progressbar:hover .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    border: solid white 3px;
+    margin-left: -4px;
 }
 
 .right-buttons {
@@ -80,23 +85,7 @@
     background-color: transparent;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-}
-
-.progress {
-    margin: 11px 0;
-    background-color: black;
-    display: flex;
-    justify-content: start;
-    border-radius: 2px;
-}
-
-.progress:hover .dot {
-    height: 8px;
-    width: 8px;
-    background-color: #ff0000;
-    border-radius: 50%;
-    border: solid white 3px;
-    margin-left: -4px;
+    margin: auto 0;
 }
 
 .slider {
