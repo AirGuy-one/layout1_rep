@@ -33,7 +33,6 @@
 
 .viewing-progressbar {
     flex-grow: 1;
-    cursor: pointer;
     margin: 11px 5px;
     background-color: black;
     display: flex;
